@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>largeform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="myForm">
+        <div>
+            <label>Username</label>
+            <input type="text" id="username">
+            <small class="error"></small>
+        </div>
+
+        <div>
+            <label>Email</label>
+            <input type="email" id="email">
+            <small class="error"></small>
+        </div>
+
+        <div class="password-container">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password">
+            <span class="toggle-password" onclick="togglePassword()">👁</span>
+            <div class="error"></div>
+        </div>
+        
+        <div class="password-container">
+            <label for="password">Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password">
+            <span class="toggle-confirmpass" onclick="toggleConfirmPass()">👁</span>
+            <small class="error"></small>
+        </div>
+
+        <div>
+            <label>Select Country</label>
+            <select id="country">
+                <option value="">-- Select --</option>
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+            </select>
+            <small class="error"></small>
+        </div>
+
+        <div>
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male" id="male"> Male
+            <input type="radio" name="gender" value="female" id="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+            <div class="error"></div>
+        </div>
+
+        <div>
+            <input type="checkbox" id="terms">
+            <label for="terms"> I agree to the terms and conditions</label>
+            <div class="error"></div>
+        </div>
+
+        <button type="submit">Submit</button>
+        <p id="successMessage"></p>
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

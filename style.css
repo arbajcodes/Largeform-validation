@@ -1,0 +1,171 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #1778d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+form {
+  background: #fff;
+  padding: 20px 25px;
+  padding-right: 50px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px 10px;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: 0.3s;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #007bff;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 3px;
+  display: block;
+}
+
+.is-error {
+  border: 2px solid red !important;
+}
+
+.is-success {
+  border: 2px solid green !important;
+}
+
+#successMessage {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}
+
+/* Gender section */
+div label {
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+/* Radio buttons ke beech spacing */
+input[type="radio"] {
+  width: 20px;
+  margin: 10px 5px 0px 15px;
+  ;
+  /* left-right gap */
+  cursor: pointer;
+}
+
+/* First radio ke liye thoda gap hatao */
+input[type="radio"]:first-of-type {
+  margin-left: 0;
+}
+
+/* check-sesction  */
+
+input[type="checkbox"] {
+  margin-right: 8px;
+  width: 20px;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+/* addeye-icon--------------------------------------------------------- */
+.password-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: all 2s ease-in;
+}
+
+.toggle-password {
+  position: absolute;
+  right: -10px;
+  top: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+  user-select: none;
+}
+
+.toggle-confirmpass {
+  position: absolute;
+  right: -10px;
+  top: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  color: #555;
+  user-select: none;
+}
+
+/* Small screen ke liye */
+@media (max-width: 480px) {
+  form {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  input,
+  select {
+    font-size: 8px;
+    padding: 3px;
+  }
+  .toggle-password {
+    right: 0px;
+    top: 25px;
+    font-size: 10px; 
+  }
+  
+  .toggle-confirmpass {
+    right: 0px;
+    top: 25px;
+    font-size: 10px;
+  }
+}
+
+
